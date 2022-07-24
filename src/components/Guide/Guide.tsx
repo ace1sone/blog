@@ -1,6 +1,5 @@
-import { Layout, Row, Typography } from 'antd';
 import React from 'react';
-import { Table, Space, Tag } from 'antd';
+import { Table, Space, Tag, Button, Layout, Row, Typography } from 'antd';
 import type { ColumnsType } from 'antd/es/table'
 import styles from './Guide.less';
 
@@ -89,6 +88,7 @@ const Guide: React.FC<Props> = (props) => {
   ];
   return (
     <>
+    <Button type="primary" style={{ margin: '12px 0' }}>添加主角</Button>
     <Table columns={col} dataSource={data} {...tableProps}/>
     </>
   );
