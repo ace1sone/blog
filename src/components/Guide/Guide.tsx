@@ -89,7 +89,7 @@ const Guide: React.FC<Props> = (props) => {
   ];
   return (
     <>
-    <Button>添加按钮</Butt>
+    <Button>添加按钮</Button>
     <Table columns={col} dataSource={data} {...tableProps}/>
     </>
   );
