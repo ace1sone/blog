@@ -1,4 +1,4 @@
-import { Layout, Row, Typography } from 'antd';
+import { Button, Layout, Row, Typography } from 'antd';
 import React from 'react';
 import { Table, Space, Tag } from 'antd';
 import type { ColumnsType } from 'antd/es/table'
@@ -89,6 +89,7 @@ const Guide: React.FC<Props> = (props) => {
   ];
   return (
     <>
+    <Button>添加按钮</Butt>
     <Table columns={col} dataSource={data} {...tableProps}/>
     </>
   );
